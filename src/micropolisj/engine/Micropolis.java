@@ -1467,6 +1467,7 @@ public class Micropolis
 		bb.put("STADIUM_FULL", new MapScanner(this, MapScanner.B.STADIUM_FULL));
 		bb.put("AIRPORT", new MapScanner(this, MapScanner.B.AIRPORT));
 		bb.put("SEAPORT", new MapScanner(this, MapScanner.B.SEAPORT));
+		bb.put("OPERA", new MapScanner(this, MapScanner.B.STADIUM_EMPTY));
 
 		this.tileBehaviors = bb;
 	}

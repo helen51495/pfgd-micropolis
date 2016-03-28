@@ -1009,3 +1009,20 @@
 957   misc_animation@0,2080
 958   misc_animation@0,2096
 959   misc_animation@0,2112
+# BEGIN OPERA #
+960   opera@0,0            (conducts)
+961   opera@16,0           (conducts)
+962   opera@32,0           (conducts)
+963   opera@48,0           (conducts)
+964   opera@0,16           (conducts)
+965   opera@16,16    (zone)(conducts)(building=4x4)(behavior=OPERA)(description=#28)
+966   opera@32,16          (conducts)
+967   opera@48,16          (conducts)
+968   opera@0,32           (conducts)
+969   opera@16,32          (conducts)
+970   opera@32,32          (conducts)
+971   opera@48,32          (conducts)
+972   opera@0,48           (conducts)
+973   opera@16,48          (conducts)
+974   opera@32,48          (conducts)
+975   opera@48,48          (conducts)

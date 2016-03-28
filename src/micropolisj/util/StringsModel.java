@@ -90,13 +90,11 @@ class StringsModel extends AbstractTableModel
 		return p.getProperty(si.id);
 	}
 
-	@Override
 	public int getRowCount()
 	{
 		return strings.length;
 	}
 
-	@Override
 	public int getColumnCount()
 	{
 		return 1 + locales.size();

@@ -41,7 +41,8 @@ class MapScanner extends TileBehavior
 		STADIUM_EMPTY,
 		STADIUM_FULL,
 		AIRPORT,
-		SEAPORT;
+		SEAPORT,
+		OPERA;
 	}
 
 	@Override
@@ -84,6 +85,8 @@ class MapScanner extends TileBehavior
 		case SEAPORT:
 			doSeaport();
 			return;
+		case OPERA:
+			doStadiumEmpty();		
 		default:
 			assert false;
 		}
