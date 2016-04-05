@@ -86,7 +86,8 @@ class MapScanner extends TileBehavior
 			doSeaport();
 			return;
 		case OPERA:
-			doStadiumEmpty();		
+			doOpera();
+			return;
 		default:
 			assert false;
 		}
@@ -265,7 +266,7 @@ class MapScanner extends TileBehavior
 
 		if (powerOn)
 		{
-			if (((city.cityTime + xpos + ypos) % 32) == 0) {
+			if (((city.cityTime + xpos + ypos) % 32) == 0){
 				drawStadium(FULLSTADIUM);
 				city.setTile(xpos+1,ypos, (char)(FOOTBALLGAME1));
 				city.setTile(xpos+1,ypos+1,(char)(FOOTBALLGAME2));
@@ -280,6 +281,16 @@ class MapScanner extends TileBehavior
 		if (((city.cityTime + xpos + ypos) % 8) == 0) {
 			drawStadium(STADIUM);
 		}
+	}
+	
+	void doOpera() {
+		boolean powerOn = checkZonePower();
+		city.operaCount++;
+		if ((city.cityTime % 8) == 0) {
+			repairZone(OPERA, 4);
+		}
+
+		makeTraffic(ZoneType.OPERA);
 	}
 
 	void doAirport()
